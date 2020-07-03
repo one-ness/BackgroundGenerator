@@ -25,3 +25,48 @@ h3 {
     letter-spacing: 0.01em;
 
 }
+
+.random {
+    display:block; 
+    justify-content:center; 
+    align-items:center;
+    margin-top: 5px;
+}
+
+.button {
+    font: 900 1em 'Raleway', sans-serif;
+    background-color: rgba(0,0,0,0);
+    color: rgba(0,0,0,.5);
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: none;
+}
